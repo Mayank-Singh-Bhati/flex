@@ -19,9 +19,11 @@
     style="font-family: 'sora', sans-serif"
   >
   <!-- Navbar -->
-    <header class="shadow-md shadow-gray-200 z-10 sticky top-0 left-0">
+    <header class="shadow-md shadow-gray-200 z-10 sticky top-0 left-0 bg-white
+    md:shadow-none md:z-0 md:relative md:bg-[#F7F6F8]">
+      <!--  -->
       <nav
-        class="flex flex-wrap items-center justify-between w-full py-2 px-4 bg-white md:py-0"
+        class="flex flex-wrap items-center justify-between w-full py-2 px-4 md:py-0"
       >
         <div>
           <!-- Logo -->
@@ -32,7 +34,7 @@
         </div>
         <img
           id="menu"
-          src="img/menu.svg"
+          src="../img/menu.svg"
           alt="logo"
           class="h-9 md:hidden"
           onclick="menuChange(), menuToggle()"
@@ -51,25 +53,25 @@
           >
             <li
               class="px-2 py-2
-              md:hover:bg-[rgba(121,62,229,0.8)] md:hover:rounded-[5px] md:hover:text-white"
+              md:hover:bg-[rgba(121,62,229,0.8)] md:hover:rounded-[5px] md:hover:text-white cursor-pointer"
             >
               <a href="#">Home</a>
             </li>
             <li
             class="px-2 py-2
-              md:hover:bg-[rgba(121,62,229,0.8)] md:hover:rounded-[5px] md:hover:text-white"
+              md:hover:bg-[rgba(121,62,229,0.8)] md:hover:rounded-[5px] md:hover:text-white cursor-pointer"
             >
               <a href="#">About Us</a>
             </li>
             <li
             class="px-2 py-2
-              md:hover:bg-[rgba(121,62,229,0.8)] md:hover:rounded-[5px] md:hover:text-white"
+              md:hover:bg-[rgba(121,62,229,0.8)] md:hover:rounded-[5px] md:hover:text-white cursor-pointer"
             >
               <a href="#">Contact Us</a>
             </li>
             <li
             class="px-2 py-2
-              md:hover:bg-[rgba(121,62,229,0.8)] md:hover:rounded-[5px] md:hover:text-white"
+              md:hover:bg-[rgba(121,62,229,0.8)] md:hover:rounded-[5px] md:hover:text-white cursor-pointer"
             >
               <a href="#">FAQ</a>
             </li>
@@ -86,7 +88,7 @@
           <button
             id="web-btn"
             class="px-5 py-2 bg-[#793EE5] text-white font-semibold rounded-md w-48
-            md:pr-5 md:text-[#793EE5] md:w-fit md:px-0 md:bg-white
+            md:pr-5 md:text-[#793EE5] md:w-fit md:px-0 md:bg-transparent
             lg:text-base"
           >
             Web Version
@@ -104,21 +106,68 @@
     </header>
 
     <!-- Hero Section -->
-    <div class="container px-5 py-5 flex flex-col items-center gap-5">
-      <div class="w-full flex flex-col items-center gap-5 py-5">
-        <h1 class="text-4xl font-bold">Study <span class="text-[#793EE5]">Smarter,</span><br>Not <span class="text-[#793EE5]">Harder</span></h1>
-        <p class="hidden">Examr helps students learn more efficiently and effectively 
-          with its comprehensive study materials and previous year 
-          papers.</p>
-          <button class="hidden py-2 px-5 bg-[#793EE5] gap-3 items-center text-white text-base rounded-md">share <img src="../img/share.svg" class="h-4" alt="share"></button>
+    <div class="px-5 py-5 flex flex-col items-center gap-5
+    sm:flex sm:flex-row sm:justify-evenly sm:py-14 sm:px-14
+    lg:justify-evenly">
+      <div class="
+      w-full flex flex-col items-center gap-5 py-5
+      sm:w-fit sm:justify-between sm:items-start">
+        <h1 class="
+        text-4xl font-bold
+        sm:text-4xl
+        lg:text-6xl"
+        >Study <span class="text-[#793EE5]">Smarter,</span><br>Not <span class="text-[#793EE5]">Harder</span></h1>
+        <p class="
+        hidden text-[#444444]
+        sm:block sm:text-justify sm:w-11/12 sm:max-w-[450px] sm:text-lg
+        md:font-semibold md:text-lg
+        lg:text-2xl lg:max-w-[700px]"
+        >Examr helps students learn more efficiently and effectively 
+          with its comprehensive study materials and previous year papers.</p>
+          <button class="
+          hidden py-2 px-5 bg-[#793EE5] gap-3 items-center text-white text-base rounded-md
+          sm:flex sm:mt-5 md:text-lg md:px-10"
+          >share <img src="img/share.svg" class="h-4" alt="share"></button>
       </div>
-      <img src="img/docs.png" class="h-60 w-fit" alt="docs">
-      <button class="py-2 px-7 bg-[#793EE5] flex gap-3 items-center text-white text-[20px] rounded-md">share <img src="img/share.svg" class="h-4" alt="share"></button>
+      <img class="
+        h-60 w-fit hidden
+        sm:block 
+        lg:h-96" 
+        src="img/docs.png" alt="docs"
+      />
+      <!-- Button for small viewport -->
+      <button class="
+        py-2 px-6 bg-[#793EE5] flex gap-2 items-center text-white text-[14px] rounded-md
+        sm:hidden"
+        >share <img src="img/share.svg" class="h-3 sm:h-4 aspect-square" alt="share">
+      </button>
     </div>
 
     <!-- Promotion -->
-    <div class="w-screen py-4 my-5 bg-[#793EE5]">
-      <h1 class="font-bold text-xl text-center"><span class="text-white">"</span>Ace Your <span class="text-white">Exams</span> With Examr<span class="text-white">"</span></h1>
+    <div class="
+    w-screen py-5 my-4 bg-[#793EE5]
+    sm:py-8">
+      <h1 class="
+      font-bold text-xl text-center
+      sm:text-3xl md:text-5xl"><span class="text-white">"</span>Ace Your <span class="text-white">Exams</span> With Examr<span class="text-white">"</span></h1>
+    </div>
+
+    <!-- About Us -->
+    <div class="w-fit m-auto text-center">
+      <h4 class="text-[#793EE5] text-xs sm:text-base">About Us</h4>
+      <h1 class="text-base font-bold sm:text-sm">Who We Are</h1>
+    </div>
+    <div class="flex flex-col px-4 items-center">
+      <img 
+        class="w-60 my-5 sm:w-72"
+        src="img/Portfolio.png"
+        alt=""
+      />
+      <h1 class="text-base font-bold text-center sm:text-xl">Shaping a New Era of Sharing <span class="text-[#793EE5]">Papers</span> With <span class="text-[#793EE5]">Exam</span>'s Help</h1>
+      <p class="hidden">Examr is an invaluable educational platform, offering students a 
+        diverse range of comprehensive study materials covering crucial 
+        exam topics. These resources not only provide essential 
+        knowledge but also cultivate vital skills for academic success</p>
     </div>
 
     <!-- JavaScript -->
