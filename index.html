@@ -153,7 +153,7 @@
     </div>
 
     <!-- About Us -->
-    <div class="flex flex-col items-center text-center mt-6">
+    <div class="flex flex-col items-center text-center mt-6 lg:mt-10">
       <h4 class="text-[#793EE5] text-sm md:text-base">About Us</h4>
       <h1 class="text-base font-bold sm:text-lg md:text-2xl lg:text-3xl">Who We Are</h1>
     </div>
@@ -176,11 +176,11 @@
       </div>
     </div>
     <!-- Features -->
-    <div class="flex flex-col items-center text-center mt-10 md:mt-5">
+    <div class="flex flex-col items-center text-center mt-5">
       <h4 class="text-[#793EE5] text-sm md:text-base">Features</h4>
       <h1 class="text-base font-bold sm:text-lg md:text-2xl lg:text-3xl">Why We</h1>
     </div>
-    <div class="flex w-full gap-20 flex-wrap justify-evenly px-4 my-5">
+    <div class="flex w-full gap-10 md:gap-20 flex-wrap justify-evenly px-4 md:px-6 my-5 md:my-10">
       <!-- Notifications -->
       <div id="notification" class="w-[300px] border border-transparent relative"> 
         <img src="img/notification.svg" alt="notification" class="p-2.5 bg-[#F8C5A9] rounded-lg  absolute top-0 left-0">
@@ -203,6 +203,43 @@
         <p class="w-full mt-[5px] text-justify text-xs md:text-base font-medium text-[#444444]">Students can access a diverse array of study materials, ranging from comprehensive notes to interactive multimedia resources, all organized intuitively by subject and topic</p>
       </div>
     </div>
+
+    <!-- Contact Us -->
+    <div class="lg:mt-[250px] xl:mt-[275px]">
+      <!-- Main Container -->
+      <div class="relative lg:h-[500px] w-full bg-[#793EE5] lg:bg-none flex flex-col items-center lg:flex-row lg:justify-evenly sm:p-6 lg:gap-10">
+        <div class="hidden xl:block absolute top-0 left-0 w-44">
+          <img src="img/Box 1.svg" alt="">
+        </div>
+        <div class="hidden xl:block absolute bottom-0 left-0 w-48">
+          <img src="img/Box 2.svg" alt="">
+        </div>
+        <h1 class="text-white text-lg sm:text-2xl md:text-3xl lg:text-4xl font-extrabold my-4">Join Us in This Exciting <span class="text-black">Journey</span><br>to Ace your Exams</h1>
+        
+        <!-- Contact Us Wrapper -->
+        <div class="
+        flex flex-col items-start w-full sm:max-w-[500px] bg-[#EEEEEA] p-4 sm:px-6 sm:rounded-md
+        lg:-translate-y-28">
+          <h1 class="my-4 font-bold text-2xl">Contact Us</h1>
+           <form action="#" class="space-y-6 flex flex-col w-full items-center">
+            <div class="input-field flex flex-col space-y-2 w-full">
+              <label for="user-name">Name</label>
+              <input type="text" placeholder="Full Name" class="bg-transparent w-full px-2 py-1 outline-none  border-b-2 border-[#444444] text-base text-[#444444] font-medium"/>
+            </div>
+            <div class="input-field flex flex-col space-y-2 w-full">
+              <label for="email">Email</label>
+              <input type="email" placeholder="abc@xyz.com" class="bg-transparent w-full px-2 py-1 outline-none border-b-2 border-[#444444] text-base text-[#444444] font-medium"/>
+            </div>
+            <div class="input-field flex flex-col space-y-2 w-full">
+              <label for="feedback">Message</label>
+              <textarea name="feedback" class="p-2 outline-none text-base text-[#444444] font-medium md:resize-none min-h-[40px]" cols="30" rows="10" placeholder="Type your message here"></textarea>
+            </div>
+            <input type="submit" class="py-3 rounded-md bg-[#793EE5] text-white font-medium text-base w-full"/>
+           </form>
+        </div>
+      </div>
+    </div>
+
     <!-- JavaScript -->
     <script src="index.js"></script>
   </body>
