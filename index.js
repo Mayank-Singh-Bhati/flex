@@ -12,7 +12,7 @@ let imgPath = document.getElementById("menu");
       const menuToggle = () => {
         nav.classList.toggle("hidden");
         nav.classList.toggle("flex");
-      }
+      };
 // Faq
 const faqs = document.querySelectorAll(".faq");
 faqs.forEach(faq => {
