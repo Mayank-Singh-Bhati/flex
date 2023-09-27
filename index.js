@@ -13,10 +13,4 @@ let imgPath = document.getElementById("menu");
         nav.classList.toggle("hidden");
         nav.classList.toggle("flex");
       };
-// Faq
-const faqs = document.querySelectorAll(".faq");
-faqs.forEach(faq => {
-  faq.addEventListener("click", () => {
-    faq.classList.toggle("active");
-  })
-});
+
