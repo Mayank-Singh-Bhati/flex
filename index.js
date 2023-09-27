@@ -20,10 +20,3 @@ faqs.forEach(faq => {
     faq.classList.toggle("active");
   })
 });
-
-// document.addEventListener("click", () => {
-//   let action = document.querySelector(".faq");
-//   if(action.classList.contains("active")) {
-//     action.classList.remove("active");
-//   }
-// })
